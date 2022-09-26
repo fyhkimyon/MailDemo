@@ -22,5 +22,8 @@ java -jar MailDemo-1.0-SNAPSHOT.jar
 ```
 ### Docker
 ```bash
+git clone https://github.com/fyhkimyon/MailDemo.git
+cd MailDemo
 docker build -t maildemo:latest .
+docker rmi maven:3.8.4-jdk-11
 ```

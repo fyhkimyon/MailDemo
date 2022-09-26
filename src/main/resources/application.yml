@@ -6,14 +6,14 @@ spring:
   mail:
     default-encoding: UTF-8
     # 邮箱类型
-    host: smtp.qq.com
+    host: ${HOST:smtp.qq.com}
     # 发送者邮箱地址
-    username: xxx@xxx.com
+    username: ${USERNAME:xxx@xxx.com}
     # 授权码
-    password: xxxxxxxx
+    password: ${PASSWORD:xxxxxxxx}
     # 发送者昵称
-    nickname: nickname
+    nickname: ${NICKNAME:nickname}
     # html模板文件目录
-    template-dir: message.ftl
+    template-dir: ${TEMP;ATE_DIR:message.ftl}
     # smtp端口
     port: 25
