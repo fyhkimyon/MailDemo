@@ -7,7 +7,13 @@
 + 发送Html模板邮件
 + 批量发送Html模板邮件
 ## Usage
-部署完毕后访问`host:port/doc.html`调试接口
+部署完毕后访问`host:port/doc.html`调试接口 <br>
+配置参数说明
++ host: 邮箱服务器地址
++ username: 发送者邮箱地址
++ password: 发送者授权码
++ nickname: 发送者昵称
++ template-dir: html模板文件目录
 ### Normal
 + environment
     + java version: 11
