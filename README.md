@@ -34,13 +34,13 @@ docker run \\
     -itd \\
     -p 15005:15005 \\
     --name maildemo \\
-    -e HOST=smtp.qq.com \\
-    -e USERNAME=xxx@xxx.com \\
-    -e PASSWORD=xxxxxxxxxx \\
-    -e NICKNAME=username \\
-    -e TEMPLATE_DIE=message.ftl \\
+    -e MAIL_HOST=smtp.126.com \\
+    -e MAIL_USERNAME=xxx@126.com \\
+    -e MAIL_PASSWORD=XXXXXX \\
+    -e MAIL_NICKNAME=username \\
+    -e MAIL_TEMPLATE_DIE=message.ftl \\
     maildemo:latest
 EOF
 chmod 755 start-maildemo.sh
-bash maildemo.sh
+bash start-maildemo.sh
 ```

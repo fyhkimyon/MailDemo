@@ -5,15 +5,15 @@ server:
 spring:
   mail:
     default-encoding: UTF-8
-    # 邮件服务器地址
-    host: ${MAIL_HOST:smtp.qq.com}
-    # 发件人邮箱
-    username: ${MAIL_USERNAME:xxx@xxx.com}
-    # 发件人授权码
-    password: ${MAIL_PASSWORD:xxxxxxxxxx}
-    # 发件人昵称
+    # 邮箱类型
+    host: ${MAIL_HOST:smtp.126.com}
+    # 发送者邮箱地址
+    username: ${MAIL_USERNAME:xxx@126.com}
+    # 授权码
+    password: ${MAIL_PASSWORD:XXXXXX}
+    # 发送者昵称
     nickname: ${MAIL_NICKNAME:nickname}
-    # html模板文件目录（一般不需改动）
+    # html模板文件目录
     template-dir: ${MAIL_TEMPLATE_DIR:message.ftl}
     # smtp端口
     port: 25
