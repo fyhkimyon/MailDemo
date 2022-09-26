@@ -26,4 +26,21 @@ git clone https://github.com/fyhkimyon/MailDemo.git
 cd MailDemo
 docker build -t maildemo:latest .
 docker rmi maven:3.8.4-jdk-11
+cat > start-maildemo.sh << EOF
+#!bash/bash \
+
+docker run \\
+    --restart=always \\
+    -itd \\
+    -p 15005:15005 \\
+    --name maildemo \\
+    -e HOST=smtp.qq.com \\
+    -e USERNAME=xxx@xxx.com \\
+    -e PASSWORD=xxxxxxxxxx \\
+    -e NICKNAME=username \\
+    -e TEMPLATE_DIE=message.ftl \\
+    maildemo:latest
+EOF
+chmod 755 start-maildemo.sh
+bash maildemo.sh
 ```
