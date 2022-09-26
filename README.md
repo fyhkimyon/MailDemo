@@ -8,7 +8,7 @@
 + 批量发送Html模板邮件
 ## Usage
 部署完毕后访问`host:port/doc.html`调试接口
-### normal
+### Normal
 + environment
     + java version: 11
     + maven
@@ -19,4 +19,8 @@
 ```bash
 mvn package
 java -jar MailDemo-1.0-SNAPSHOT.jar
+```
+### Docker
+```bash
+docker build -t maildemo:latest .
 ```
