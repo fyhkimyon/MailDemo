@@ -1,0 +1,19 @@
+server:
+  # 程序运行端口
+  port: 15005
+
+spring:
+  mail:
+    default-encoding: UTF-8
+    # 邮箱类型
+    host: smtp.qq.com
+    # 发送者邮箱地址
+    username: xxx@xxx.com
+    # 授权码
+    password: xxxxxxxx
+    # 发送者昵称
+    nickname: nickname
+    # html模板文件目录
+    template-dir: message.ftl
+    # smtp端口
+    port: 25
