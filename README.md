@@ -12,7 +12,7 @@
 + environment
     + java version: 11
     + maven
-+ profile
++ configuration
     + application.yml
     + templates/message.ftl
 
