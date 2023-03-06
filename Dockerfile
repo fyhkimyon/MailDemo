@@ -6,4 +6,4 @@ COPY src ./src
 
 RUN mvn package -DskipTests
 
-CMD ["java","-jar","/MailDemo/target/MailDemo-1.0-SNAPSHOT.jar"]
+CMD ["java","-jar","-Dfile.encoding=UTF8","-Duser.timezone=GMT+08","/MailDemo/target/MailDemo-1.0-SNAPSHOT.jar"]
