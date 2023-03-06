@@ -24,7 +24,7 @@
 
 ```bash
 mvn package
-java -jar MailDemo-1.0-SNAPSHOT.jar
+java -jar -Dfile.encoding=UTF8 -Duser.timezone=GMT+08 MailDemo-1.0-SNAPSHOT.jar
 ```
 ### Docker
 ```bash
